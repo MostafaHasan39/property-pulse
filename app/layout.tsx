@@ -1,5 +1,6 @@
 import { PropsWithChildren, FC } from "react";
 import "@/assets/styles/globals.css";
+import NavBar from "@/components/NavBar";
 
 export const metadata = {
   title: "Property Pulse | Find The Perferct Rental",
@@ -11,7 +12,8 @@ const MainLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div>{children}</div>
+        <NavBar />
+        <main>{children}</main>
       </body>
     </html>
   );
